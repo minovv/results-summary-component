@@ -1,3 +1,135 @@
 .task_1 h1 {
   color: green;
 }
+
+.task_1 p {
+	text-fill-color: red;
+	-webkit-text-fill-color: red;
+}
+
+
+.task_1 button {
+	text-stroke: 1px #000;
+	-webkit-text-stroke: 1px #000;
+	
+}
+
+.task_2 h1 {
+  direction: rtl;
+}
+
+.task_2 p {
+  text-align: right;
+}
+
+.task_2 .btn {
+  text-transform: uppercase;
+}
+
+.task_3 h1 {
+  writing-mode: vertical-lr;
+}
+
+.task_3 pre {
+  tab-size: 4;
+}
+
+.task_3 .btn {
+	text-decoration: underline;
+	letter-spacing: 2px;
+}
+
+.task_4 h1 {
+  font-size: 50px;
+  font-style: italic;
+}
+
+.task_4 p {
+	font-family: Open Sans;
+	font-display: swap;
+	font-weight: 700;
+}
+
+.task_5 div {
+	margin: 10px;
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+
+.task_5 .btn {
+	margin: 10px;
+	padding: 10px;
+	box-sizing: content-box;
+}
+
+.task_5 input {
+	min-width: 150px;
+	min-height: 150px;
+	max-width: 300px;
+	max-height: 60px;
+	background: grey;
+}
+
+.task_5 p {
+	display: none;
+}
+
+.task_6 h1 {
+	outline: 3px double blue;
+	outline-offset: 10px;
+}
+
+.task_6 div {
+	border: 3px dotted red;
+	outline-offset: 10px;
+}
+
+.task_6 button {
+	border-radius: 25px;
+	text-shadow: 2px 2px 10px 0px #888888;
+}
+
+.task_7 button {
+	line-height: 2;
+	text-shadow: 2px 2px 5px 10px #666666;
+}
+
+.task_7 strong {
+	vertical-align: top;
+	cursor: wait;
+}
+
+.task_8 div {
+	display: none;
+}
+
+.task_8 p {
+	max-height: 70px;
+	overflow: scroll;
+}
+
+.task_8 h1 {
+	max-width: 50px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+}
+
+.task_9 h1 {
+	white-space: nowrap;
+	word-spacing: 30px;
+}
+
+.task_9 div {
+	hyphens: manual;
+}
+
+.task_9 p {
+	word-break: break-all;
+}
+
+.task_9 textarea {
+	resize: none;
+}
