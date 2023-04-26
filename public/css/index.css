@@ -45,7 +45,7 @@
 }
 
 .task_4 p {
-	font-family: Open Sans;
+	font-family: 'Open Sans';
 	font-display: swap;
 	font-weight: 700;
 }
@@ -101,7 +101,7 @@
 }
 
 .task_8 div {
-	display: none;
+	visibility: hidden;
 }
 
 .task_8 p {
