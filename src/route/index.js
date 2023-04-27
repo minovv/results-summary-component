@@ -18,22 +18,26 @@ router.get('/', function (req, res) {
 			{
 				"category": "Reaction",
 				"score": 80,
-				"icon": "./assets/images/icon-reaction.svg"
+				"icon": "./assets/images/icon-reaction.svg",
+				isReaction: true
 			},
 			{
 				"category": "Memory",
 				"score": 92,
-				"icon": "./assets/images/icon-memory.svg"
+				"icon": "./assets/images/icon-memory.svg",
+				isMemory: true
 			},
 			{
 				"category": "Verbal",
 				"score": 61,
-				"icon": "./assets/images/icon-verbal.svg"
+				"icon": "./assets/images/icon-verbal.svg",
+				isVerbal: true
 			},
 			{
 				"category": "Visual",
 				"score": 72,
-				"icon": "./assets/images/icon-visual.svg"
+				"icon": "./assets/images/icon-visual.svg",
+				isVisual: true
 			}
 		]
 

@@ -2,13 +2,44 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-6">
-				<h1>Your result</h1>
+				<div class="result">
+					<div class="result_title">Your Result</div>
+					<div class="result_score">76</div>
+					<div><span class="max_score_of">of 100</span></div>
+					<div class="result_description_title">Great</div>
+					<div class="result_description">You scored higher than 65% of the people who have taken these tests.</div>
+				</div>
 			</div>
 			<div class="col-6">
 				<div class="category">
 					<div class="summary">Summary</div>
+
 					{{#each summary}}
-					<div>{{category}} <span class="category_score">{{score}}</span> / 100</div>
+					{{#if isReaction}}
+					<div class="alert alert-danger">
+						<img class="category_icon" src="/images/icon-reaction.svg">
+						<span class="category_name">{{category}}</span> <span class="category_score">{{score}}</span> <span class="max_score">/ 100</span>
+					</div>
+					{{/if}}
+					{{#if isMemory}}
+					<div class="alert alert-warning">
+						<img class="category_icon" src="/images/icon-memory.svg">
+						<span class="category_name">{{category}}</span> <span class="category_score">{{score}}</span> <span class="max_score">/ 100</span>
+					</div>
+					{{/if}}
+					{{#if isVerbal}}
+					<div class="alert alert-success">
+						<img class="category_icon" src="/images/icon-verbal.svg">
+						<span class="category_name">{{category}}</span> <span class="category_score">{{score}}</span> <span class="max_score">/ 100</span>
+					</div>
+					{{/if}}
+					{{#if isVisual}}
+					<div class="alert alert-primary">
+						<img class="category_icon" src="/images/icon-visual.svg">
+						<span class="category_name">{{category}}</span> <span class="category_score">{{score}}</span> <span class="max_score">/ 100</span>
+					</div>
+					{{/if}}
+
 					{{/each}}
 				</div>
 				<button>Continue</button>
