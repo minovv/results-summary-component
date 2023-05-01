@@ -3,10 +3,10 @@
 	font-family: 'Roboto', sans-serif;	
 }
 
-.page {
+.page_block {
 	background-color: #ffffff;
-	padding-top: 12px;
-	min-height: max-content;
+	padding-top: 6px;
+	min-height: max-content;	
 }
 
 .container {
@@ -18,7 +18,7 @@
 .result {
 	background-color: blue;	
 	color: #ffffff;
-	min-height: inherit;
+	height: 100%;
 	border-radius: 20px;
 	text-align: center;	
 	
@@ -47,7 +47,7 @@
 .max_score {
 	font-weight: bold;
 	opacity: 0.7;
-	color: grey;	
+	color: grey;
 }
 
 .result_description_title {
@@ -62,12 +62,11 @@
 	padding-bottom: 6px;
 	padding-left: 18px;
 	padding-right: 18px;
+	text-align: center;
+	opacity: 0.7;
 	
 }
 
-.category {
-	display: block;
-}
 
 .summary {
 	color: var(--darkblue);
@@ -77,7 +76,7 @@
 }
 
 .category_name {
-	font-weight: bolder;
+	font-weight: bolder;	
 }
 
 .category_score {
@@ -95,4 +94,21 @@ button {
 	padding: 8px;
 	margin-top: 12px;
 
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.flex-item {
+	margin: 18px;
+}
+
+.alert {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
